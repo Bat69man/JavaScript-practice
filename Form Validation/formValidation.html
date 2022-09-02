@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <script src="formValidation.js" defer></script>
+    <style>
+        label{
+            color: red;
+        }
+        input{
+            padding: 7px 9px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        input[type=submit]:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="submitForm.html" id="loginForm">
+        
+        <input id="uname"
+            type="text"
+            placeholder=" Username"
+            title="must start with letters. Should only contain letters, digits and underscore(_)"
+            onchange="emptyLabel(labelUname)"
+            autofocus
+        />
+        <label id="labelUname"></label><br>
+
+        <input id="email"
+            type="email"
+            placeholder=" email address"
+        />
+        <label id="labelEmail"></label><br>
+
+        <input id="pass"
+            type="password"
+            placeholder=" Password"
+            title="must be atleast 8 characters long"
+            onchange="emptyLabel(labelPass)"
+        />
+        <label id="labelPass"></label><br>
+
+        <input type="submit" id="submit" >
+
+    </form>
+</body>
+</html>

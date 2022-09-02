@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html></html>
+<head>
+    <title>Drop-down</title>
+    <script src="dropDownInput.js" defer></script>
+</head>
+<body>
+
+    <!-- Single select -->
+    <select id="flavours1">
+        <option value="vanilla">vanilla</option>
+        <option value="strawberry">strawberry</option>
+        <option value="chocolate">chocolate</option>
+    </select><br>
+    <h2 id="result1"></h2>
+
+    <!-- multi select -->
+    <select id="flavours2" multiple onchange="addMultiple()">
+        <option value="vanilla">vanilla</option>
+        <option value="strawberry">strawberry</option>
+        <option value="chocolate">chocolate</option>
+    </select><br>
+    <h2 id="result2"></h2>
+
+</body>
+</html>

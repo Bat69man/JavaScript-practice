@@ -1,0 +1,36 @@
+https://www.w3schools.com/jsref/dom_obj_document.asp
+
+HTML is a markup language.
+
+It defines the structure of the web page, using tags such as <div>, <p> etc.
+
+CSS is used to appy designs/visuals such as colors, borders etc.
+
+JS is used to do programming on the client side.
+Like handling different events etc.
+
+How does the JS interact with the HTML ?
+Here the DOM comes in the picture.
+
+Document Object Model in JS is used to  interact with the HTML.
+
+DOM is JavaScript's view of HTML document
+
+When HTML document is loaded in the browser, corresponding to that document, another representation of that document is created which is know as DOM.
+
+Each HTML tags are represented as objects in DOM.
+Objects means it has properties as well as methods.
+
+JS can easily understands the format of DOM, so that we need DOM
+
+There re 3 nodes in the DOM
+1) Element nodes
+2) Attribute nodes
+3) Text nodes
+
+<body>
+    <!-- h1 is an element node -->
+    <h1 id="heading1"> <!-- id is an attribute node -->
+        Hello There    <!-- it is a text node -->
+    </h1>
+</body>

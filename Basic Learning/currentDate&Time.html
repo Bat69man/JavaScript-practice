@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <head>
+        <script>
+            function inStauts() {
+                var t = new Date();
+                let tag = document.getElementById("target");
+                
+                let second = ("0" + t.getSeconds());
+                second = second.slice(second.length-2);
+
+                if(t.getHours() < 12)
+                    tag.innerHTML = t.getHours()+":"+t.getMinutes()+":"+second+" AM";
+                else
+                    tag.innerHTML = (t.getHours()-12)+":"+t.getMinutes()+":"+second+" PM";
+
+                tag.innerHTML += "  - " + t.getDate() + "/" + t.getMonth() + "/" + t.getFullYear();
+
+                let dob = new Date(1999,11,14);
+                tag.innerHTML += "<br><br>DOB: " + dob.getDate() + "/"+dob.getMonth() + "/" + dob.getFullYear();
+            }
+        </script>
+    </head>
+    <body onload="inStauts()">
+        <h1 id="target"></h1>
+    </body>
+</html>

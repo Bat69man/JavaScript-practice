@@ -28,3 +28,21 @@ function add2(num1, num2=0, num3=0){
     return num1 + num2 + num3;
 }
 console.log(add2(5,3)) // NaN, add(5, 3, 0)
+
+/* ---------------------------- */
+var abc = "abc"
+function test(){
+    
+    var efg = "efg"
+    // we can create variables without keywords var/let, variable becomes global by default
+    xyz = "xyz"
+    console.log(abc);
+    console.log(efg);
+    console.log(xyz);
+}
+test()
+
+console.log();
+console.log(abc);
+//console.log(efg); // ERROR
+console.log(xyz);
