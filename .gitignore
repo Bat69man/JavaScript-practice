@@ -1,4 +1,5 @@
 js.png
 *.code-workspace
 desktop.ini
-/jQuery-Basic/jQuery-UI/
+jQuery-UI/
+test.js
