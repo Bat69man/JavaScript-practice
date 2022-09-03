@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jquery UI | Tabs </title>
+
+    <script src="/jQuery Basic/jquery.js"></script>
+    <script src="/jQuery Basic/jQuery-UI/jquery-ui/jquery-ui.js"></script>
+    <script>
+        $(document).ready(()=>{
+            $('#tabs').tabs();
+        });
+    </script>
+
+    <link rel="stylesheet" href="accordion.css">
+    <link rel="stylesheet" href="/jQuery Basic/jQuery-UI//jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="/jQuery Basic/jQuery-UI//jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="/jQuery Basic/jQuery-UI//jquery-ui/jquery-ui.structure.css">
+</head>
+
+<body>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Heading 1</a></li>
+            <li><a href="#tabs-2">Heading 2</a></li>
+            <li><a href="#tabs-3">Heading 3</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p> content paragraph 1 </p>
+        </div>
+        <div id="tabs-2">
+            <img src="/js.png" height="120px" width="auto">
+        </div>
+        <div id="tabs-3">
+            <p> content paragraph 3 </p>
+        </div>
+    </div>
+</body>
+</html>
