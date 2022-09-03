@@ -1,3 +1,5 @@
+Examples: https://www.w3schools.com/jquery/jquery_examples.asp
+
 jQuery is a fast, small and feature-rich JS library.
 
 - purpose of jQuery is to make it much easier to use JS on your web site. Write-less & Do-more.
@@ -10,18 +12,30 @@ jQuery is a fast, small and feature-rich JS library.
 
 - It also simplifies a lot of comlicated things from JS, like AJAX calls DOM manipulation.
 
+- CDN: <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 jQuery contains features like:
 
     - HTML/DOM manipulation
     - CSS manipulation
     - HTML event methods
-    - Effects and animations
+    - Effects and animations 
+    https://www.w3schools.com/jquery/jquery_hide_show.asp
+
     - AJAX
+    https://www.w3schools.com/jquery/jquery_ajax_intro.asp
+
     - Utilities
 
 In JS we used functions like getElementById, Name, TagName etc. to manipulate HTML DOM elements.
 In jQuery we use selectors to do so.
 It has basic CSS selectors, and in addition it has also some own custom selectors.
+
+Basic syntax is: $(selector).action()
+
+    - A $ sign to define/access jQuery
+    - A (selector) to "query (or find)" HTML elements
+    - A jQuery action() to be performed on the element(s)
 
     Selectors: https://www.w3schools.com/jquery/jquery_selectors.asp
 
@@ -70,6 +84,7 @@ It has basic CSS selectors, and in addition it has also some own custom selector
     // examples are in 'DOM_Manipulation' files
     text()
     html()
+    val() - get/set value of tags like input etc.
     attr() - returns the value of specified attribute of element
     append() - adds content at the end of the element
     prepend() - adds content at the begining of the element
@@ -79,3 +94,38 @@ It has basic CSS selectors, and in addition it has also some own custom selector
     addCalss() - add a class to html element
     removeClass() - remove a class from html element
     toggleClass() - add/remove a class to/from html element
+
+    https://www.w3schools.com/jquery/jquery_traversing_ancestors.asp
+    parent()
+    parents()
+    parentsUntil()
+
+    https://www.w3schools.com/jquery/jquery_traversing_descendants.asp
+    children()
+    find()
+
+    https://www.w3schools.com/jquery/jquery_traversing_siblings.asp
+    siblings()
+    next()
+    nextAll()
+    nextUntil()
+    prev()
+    prevAll()
+    prevUntil()
+
+    https://www.w3schools.com/jquery/jquery_traversing_filtering.asp
+    first()
+    last()
+    eq()
+    filter()
+    not()
+
+
+    load(): https://www.w3schools.com/jquery/jquery_ajax_load.asp
+
+    https://www.w3schools.com/jquery/jquery_ajax_get_post.asp
+    $.get()
+    $.post()
+
+    https://www.w3schools.com/jquery/jquery_filters.asp
+    filter()
