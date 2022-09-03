@@ -1,0 +1,53 @@
+testing site: https://regex101.com/
+
+    \d - match any digit like [0-9]
+    \w - match any word character like [a-zA-Z0-9_]
+    \s - match whitespace characters like space and tabs
+    \t - matches a tab only
+
+    {}:
+    inside curley braces we can give the specific number for a set
+    i.e) a number must be 10 character long
+        => /^\d{10}$/
+    i.e) number must be 2 to 10 characters long
+        => /^\d{2,10}$/
+
+    if we want value of any length, we can use '+' after a set
+    i.e) A number anylong (dynamic)
+        => /^[0-9]+$/
+
+
+    ?:
+    - Question mark makes a part optional
+
+    last character can be a digit but not necessary
+    /^[a-z]+([0-9])?$/
+    ([0-9])? digit as a last characters becomes optional
+
+In JS, we can tast regex as follows:
+
+    /regex/.test(StringTOBeTested)
+
+    test method returns true or false
+    there are some useful flags like
+    g (global): checks for mathches in entire string
+    i (insensitive): case insensitive
+    m : declares '^' as start and '$' as end of string
+
+1) mobile number validation
+
+    must start with 6 to 9
+    0-9 allowed 9 times further
+    total length must be 10
+    
+    /^[6-9][0-9]{9}$/g
+    or
+    /^[6-9]\d{9}$/gm
+
+2) email validation
+
+    /^[a-z][a-zA-Z0-9\.-_]+@[a-z]+\.[a-z]{2,10}$/g
+    or
+    /^([a-z][a-zA-Z0-9\.-_])@([a-z0-9_-]).([a-z]{2,10})$/
+
+    using () we can divide our expression into parts.

@@ -1,0 +1,81 @@
+jQuery is a fast, small and feature-rich JS library.
+
+- purpose of jQuery is to make it much easier to use JS on your web site. Write-less & Do-more.
+
+- It is most widely used JS library.
+- It is open source and free to use.
+- It is cross-browser compitible
+
+- jQuery takes a lot of common tasks that require many lines of JS code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+- It also simplifies a lot of comlicated things from JS, like AJAX calls DOM manipulation.
+
+jQuery contains features like:
+
+    - HTML/DOM manipulation
+    - CSS manipulation
+    - HTML event methods
+    - Effects and animations
+    - AJAX
+    - Utilities
+
+In JS we used functions like getElementById, Name, TagName etc. to manipulate HTML DOM elements.
+In jQuery we use selectors to do so.
+It has basic CSS selectors, and in addition it has also some own custom selectors.
+
+    Selectors: https://www.w3schools.com/jquery/jquery_selectors.asp
+
+    Syntax:
+            document.getElementById('lol');
+            $('#lol')
+
+            document.getElementByTagName('h1')
+            $('h1')
+
+            after selector, we also have to specify what action we want to do on that selector.
+
+            $('#target').action();
+
+    Generally we write jquery code inside 
+    
+    $(document).ready()
+
+    which means all the code should run only after whole HTML document is loaded and ready.
+
+    i.e)
+    $(document).ready( function(){
+        $('#lol').click( function (){
+            $(this).hide();
+        });
+    });
+
+    jquery Events: https://www.w3schools.com/jquery/jquery_events.asp
+
+    i.e)
+    $('#lol').dblclick( ()=>{
+        $(this).hide();
+    });
+
+    // hover event takes 2 functions as arguments
+
+    $('p').mouseenter(show);
+    $('p').mouseleave(hide);
+    or
+    $('p').hover(show, hide);
+
+    Both do similar work.
+
+*) some DOM manipulation methods are..
+
+    // examples are in 'DOM_Manipulation' files
+    text()
+    html()
+    attr() - returns the value of specified attribute of element
+    append() - adds content at the end of the element
+    prepend() - adds content at the begining of the element
+    after() - adds content after(outside) specified element
+    before() - adds content before(outside) specified element
+    css() - sets or returns style attribute
+    addCalss() - add a class to html element
+    removeClass() - remove a class from html element
+    toggleClass() - add/remove a class to/from html element

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Login</title>
+    <title>Form validation</title>
     <script src="formValidation.js" defer></script>
     <style>
         label{
@@ -28,13 +28,13 @@
             onchange="emptyLabel(labelUname)"
             autofocus
         />
-        <label id="labelUname"></label><br>
+        <label id="labelUname" for="uname"></label><br>
 
         <input id="email"
             type="email"
             placeholder=" email address"
         />
-        <label id="labelEmail"></label><br>
+        <label id="labelEmail" for="email"></label><br>
 
         <input id="pass"
             type="password"
@@ -42,7 +42,7 @@
             title="must be atleast 8 characters long"
             onchange="emptyLabel(labelPass)"
         />
-        <label id="labelPass"></label><br>
+        <label id="labelPass" for="pass"></label><br>
 
         <input type="submit" id="submit" >
 

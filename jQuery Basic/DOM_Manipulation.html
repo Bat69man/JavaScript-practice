@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery | DOM manipulation</title>
+    <script src="jquery.js"></script>
+    <script src="DOM_Manipulation.js"></script>
+    <style>
+        .blue, .red{
+            padding: 20px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .blue{
+            border: 2px solid blue;
+            color: blue;
+        }
+        .red{
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnGetText"> Show text </button>
+    <button id="btnGetHtml"> Show html </button><br><br>
+
+    <input id="text"/>
+    <button id="btnSetText"> Change text </button>
+    <button id="btnSetHtml"> Change html </button><br><br>
+
+    <button id="btnGetClass"> Get class </button>
+    <button id="btnSetClass"> Change class </button><br><br>
+
+    <button id="btnGetCSS"> Get CSS </button><br><br>
+
+    <input id="cssProperty" placeholder="Property">
+    <input id="cssValue" placeholder="Value">
+    <button id="btnSetCSS"> Set CSS </button><br>
+
+    <div id="target" class="blue">
+        <p id="p1"> Hello there, <i>i am</i> <b>Batman</b>... </p>
+    </div>
+</body>
+</html>

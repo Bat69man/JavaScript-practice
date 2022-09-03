@@ -19,11 +19,12 @@ function validateUsername(uname, label){
 }
 
 function validateEmail(email, label){
+    let emailRegex = /^[a-z][a-zA-Z0-9\.-_]+@[a-z]+\.[a-z]$/gm;
+    //flag /m declares '^' and '$' as start and end of line in regex
     if(email.value == ""){
         label.innerHTML = "*requried";
     }
-    else if( !(/^[a-z][a-zA-Z0-9_.-]+@[a-z]+\.[a-z]+$/gm.test(email.value)) ){
-    //flag /m declares '^' and '$' as start and end of line in regex
+    else if( !(emailRegex.test(email.value)) ){
         label.innerHTML = "invalid email format"
     }
     else{

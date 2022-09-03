@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>jQuery | DOM manipulation</title>
+    <script src="jquery.js"></script>
+    <script src="DOM_Manipulation2.js"></script>
+    <style>
+        .blue, .red{
+            padding: 20px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+        .blue{
+            border: 2px solid blue;
+            color: blue;
+        }
+        .red{
+            border: 2px solid red;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnAppend"> Append </button>
+    <button id="btnPrepend"> Prepend </button>
+    <button id="btnAfter"> After </button>
+    <button id="btnBefore"> before </button><br><br>
+
+    <button id="btnEmpty"> Empty </button>
+    <button id="btnRemove"> Remove </button><br><br>
+
+    <input id="tagName" placeholder="tag names, i.e) div">
+    <input id="selector" placeholder="selectors, i.e) #id .class">
+    <button id="btnRemoveElement"> Remove element</button>
+
+    <div id="target" class="blue">
+        <p id="p1"> Hello there, <i>i am</i> <b>Batman</b>... </p>
+    </div>
+</body>
+</html>

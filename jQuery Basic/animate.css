@@ -1,0 +1,24 @@
+body{
+    font-family: century gothic;
+    background: linear-gradient(95deg, lightblue, cornflowerblue, dodgerblue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.cube{
+    position: absolute;
+    height: auto;
+    width: 100px;
+    padding: 50px;
+    margin: 10px 0px;
+    background-color: rgb(189, 90, 90);
+    text-align: center;
+    font-size: 25px;
+    box-shadow: 3px 3px 10px black;
+}
+#btnAnimate{
+    padding: 5px;
+    margin-top: 180px;
+}
+#btnAnimate:hover{
+    cursor: pointer;
+}

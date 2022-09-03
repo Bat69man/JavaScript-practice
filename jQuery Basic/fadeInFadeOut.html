@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Fadein - Fadeout </title>
+    </head>
+    <body>
+        <h1 id="target"> See you again... </h1>
+        <button id="btnFade"> Fade Toggle </button>
+    </body>
+    <script src="jquery.js"></script>
+    <script>
+        document.getElementById("btnFade").onclick = () => {
+            // it's so easy to make it using jQuery right?
+            $("#target").fadeToggle(500);
+        }
+    </script>
+</html>
